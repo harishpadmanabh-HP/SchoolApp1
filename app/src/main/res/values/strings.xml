@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Schoolman</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="prompt">Bus ID</string>
+    <string name="Dialog">Do you want to start trip?</string>
+    <string name="Remove">Are you sure to Remove Kid ?</string>
+    <string name="turn_on_gps">Turn on GPS</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="school">Cancel</string>
+    <string name="school1">Cancel</string>
+    <string name="school2">Cancel</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="blood_group">Blood } : \n group</string>
+
+</resources>

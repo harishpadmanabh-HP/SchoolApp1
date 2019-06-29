@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#249eec</color>
+    <color name="colorPrimaryDark">#005EE2</color>
+    <color name="colorPrimaryLight">#1396F1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="aqua">#00B8D4</color>
+    <color name="red">#F44336</color>
+    <color name="transparent">#e7e5e7</color>
+    <color name="yellow">#FFAB00</color>
+    <color name="baby_yellow">#FFFF8D</color>
+    <color name="grey">#BDBDBD</color>
+    <color name="purple">#AA00FF</color>
+    <color name="offwhite">#FAFAFA</color>
+    <color name="green">#00E676</color>
+    <color name="green_buttons">#f26c76</color>
+    <color name="white_text">#fffefe</color>
+    <color name="lightgrey">#EEEEEE</color>
+    <color name="blue">#0276F0</color>
+    <color name="textcolor">#ffffff</color>
+
+    //Teacher
+    <color name="colorwhite">#fff</color>
+    <color name="colorgray">#d3d3d3</color>
+    <color name="colorblack">#000</color>
+    <color name="color_preloader_start">#000000</color>
+    <color name="color_preloader_center">#000000</color>
+    <color name="color_preloader_end">#ff56a9c7</color>
+    <color name="colourmessage_bg">#899bce</color>
+    </resources>

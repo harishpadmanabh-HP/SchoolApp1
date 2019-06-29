@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow
+        android:weightSum="6"
+        android:background="#fff"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/sname"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ellipsize="end"
+            android:padding="2dp"
+            android:text="Student Name"
+            android:textColor="#000" />
+        <EditText
+            android:id="@+id/internalmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="14dp"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:hint="Internal Marks "
+            android:textColor="#000" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:id="@+id/externalmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="14dp"
+            android:hint="External Marks "
+            android:textColor="#000" />
+    </TableRow>
+
+</TableLayout>

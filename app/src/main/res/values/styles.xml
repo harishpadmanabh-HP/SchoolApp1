@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme"  parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+
+<item name="tabIndicatorColor">@android:color/holo_purple</item>
+<item name="tabIndicatorHeight">2dp</item>
+<item name="tabPaddingStart">8dp</item>
+<item name="tabPaddingEnd">8dp</item>
+<item name="tabBackground">?attr/selectableItemBackground</item>
+<item name="tabTextAppearance">@style/TabTextAppearance</item>
+<item name="tabSelectedTextColor">@android:color/white</item>
+</style>
+
+<style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+<item name="android:textSize">14sp</item>
+<item name="android:textColor">@android:color/white</item>
+<item name="textAllCaps">true</item>
+</style>
+    <style name="spinner_style" parent="@style/Widget.AppCompat.Spinner.Underlined">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:dropDownWidth">100dp</item>
+
+        <item name="android:divider">@drawable/divider</item>
+        <item name="android:dividerHeight">5dp</item>
+        <item name="android:popupBackground">@android:color/white</item>
+        <item name="android:dropDownHeight">70dp</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:dropDownSelector">@android:color/white</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@color/red</item>
+        <item name="colorControlHighlight">@color/red</item>
+    </style>
+    <style name="spinner__style" >
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+
+</resources>

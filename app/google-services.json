@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "834580440094",
+    "firebase_url": "https://ktct-school-90f2c.firebaseio.com",
+    "project_id": "ktct-school-90f2c",
+    "storage_bucket": "ktct-school-90f2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834580440094:android:8b55092d26bcdd52",
+        "android_client_info": {
+          "package_name": "com.schoolmanapp.ktct_school.school"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834580440094-3h5mnpjfjk7bb141quc22c66v8j4ksig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_WyOqMRHdHwfyDRGYoEJwtTME7VFhcfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834580440094-3h5mnpjfjk7bb141quc22c66v8j4ksig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

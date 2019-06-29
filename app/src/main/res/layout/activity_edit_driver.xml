@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/tabaddlay"
+        android:visibility="invisible">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameadd_lay">
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabhidelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:weightSum="9">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/ll_back"
+                        >
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/imgback"
+                            android:src="@mipmap/bcak_arrow"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Driver"
+                            android:textColor="@android:color/white"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/dr_scroll"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:id="@+id/ll_showup"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="6">
+
+                    <ImageView
+                        android:id="@+id/dr_proimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_weight="6"
+                        android:src="@mipmap/addimage" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="6">
+
+                    <EditText
+                        android:id="@+id/drname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/edittext_border"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:paddingLeft="5dp"
+                        android:textColorHint="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="6">
+
+                    <EditText
+                        android:id="@+id/drlcno"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+
+                        android:layout_weight="4"
+                        android:background="@drawable/edittext_border"
+                        android:hint="License Number"
+                        android:paddingLeft="5dp"
+                        android:textColorHint="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="6">
+
+                    <EditText
+                        android:id="@+id/draddr"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/edittext_border"
+                        android:hint="Address"
+                        android:inputType="textPostalAddress"
+
+                        android:paddingLeft="5dp"
+                        android:textColorHint="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="6">
+
+                    <com.schoolmanapp.ktct_school.school.school.CustomAutoCompleteTextView
+                        android:id="@+id/drcity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/edittext_border"
+                        android:hint="City"
+                        android:inputType="text"
+                        android:paddingLeft="5dp"
+                        android:textColorHint="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="6">
+
+                    <com.schoolmanapp.ktct_school.school.school.CustomAutoCompleteTextView
+                        android:id="@+id/drstate"
+                        android:layout_width="0dp"
+
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/edittext_border"
+                        android:hint="State"
+                        android:inputType="text"
+                        android:paddingLeft="5dp"
+                        android:textColorHint="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="6">
+
+                    <EditText
+                        android:id="@+id/drphno"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/edittext_border"
+                        android:hint="Contact Number"
+                        android:inputType="number"
+                        android:maxLength="10"
+
+                        android:paddingLeft="5dp"
+                        android:textColorHint="@color/grey" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_createbutton"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="50dp"
+
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="Create"
+                        android:background="@drawable/button_press"
+                        android:textColor="@color/textcolor"
+                        android:id="@+id/img_adddriverbtn"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

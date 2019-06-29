@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    tools:context=".parent.Java_class.SelectExamParent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cd_hd"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_width="@dimen/logo"
+                android:layout_height="@dimen/logo"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/logo_school"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Select Exam"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_settings"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:src="@mipmap/settings"-->
+                <!--app:layout_constraintBottom_toTopOf="parent"-->
+                <!--app:layout_constraintRight_toLeftOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="parent" />-->
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:weightSum="4"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Exam : "
+            android:textSize="22dp"
+            android:textColor="#ffffff"
+            android:textStyle="normal"
+
+
+
+            />
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="1dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_border"
+            android:orientation="horizontal">
+            <Spinner
+
+
+                android:id="@+id/spinnerExamsparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="40dp"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+            <!--<ImageView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:src="@mipmap/spinner_downarrow" />-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/viewResultbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" VIEW RESULT "
+        android:padding="15dp"
+        android:background="@drawable/button_press_new"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>
